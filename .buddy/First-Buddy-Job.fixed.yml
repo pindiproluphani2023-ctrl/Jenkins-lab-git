@@ -5,3 +5,13 @@
   fail_on_prepare_env_warning: true
   events:
   - type: WEBHOOK
+  actions:
+  - action: cat lab_output.txt
+    type: BUILD
+    execute_commands:
+    - "echo \"Buddy Task 3: Checking Workspace\""
+    - echo "This file was created by Pavan for Task 3" > lab_output.txt
+    - cat lab_output.txt
+    shell: BASH
+    docker_image_name: buddy/localshell
+    docker_image_tag: ubuntu_24.04
