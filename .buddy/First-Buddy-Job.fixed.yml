@@ -5,7 +5,6 @@
   fail_on_prepare_env_warning: true
   events:
   - type: WEBHOOK
-  - type: PUSH
   actions:
   - action: cat lab_output.txt
     type: BUILD
